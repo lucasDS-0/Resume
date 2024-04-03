@@ -1,0 +1,14 @@
+# LaTeX debug files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pdf
+*.gz
+*.loa
+*.toc
+*.out
+*.loe
+*.bbl
+*.blg
+*.dvi
