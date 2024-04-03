@@ -1,16 +1,27 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[paper=a4paper, left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry}
-
+\usepackage{fontawesome}
 \usepackage{hyperref}
 \usepackage{multicol}
 
+
+\usepackage{xcolor}
+\definecolor{darkred}{rgb}{0.55, 0.0, 0.0}
+
 \hypersetup{
     colorlinks = true,
-    breaklinks = true,
-    urlcolor   = magenta, 
+    breaklinks = true
+    linkcolor  = darkred,
+    urlcolor   = darkred,
 }
 
+\usepackage{amssymb}
+\usepackage{enumitem}
+\setlist[itemize]{label=\textcolor{darkred}{\tiny $\blacksquare$}}
+\renewcommand{\labelenumi}{\textcolor{darkred}{\arabic{enumi}.}}
+\renewcommand{\labelenumii}{\textcolor{darkred}{\arabic{enumi}.}}
+\renewcommand{\labelenumiii}{\textcolor{darkred}{\arabic{enumi}.}}
 
 \begin{document}
 \pagestyle{empty}
@@ -19,23 +30,23 @@
 		{\huge Lucas Di Salvo}
 	\bigskip\par}
 
-\section*{Personal Data} 
+\section*{\faAt ~~ Personal Data} 
 \hrule
-\
 
 \
+\newline
+\
 
-\begin{tabular}{l l}
-     Email & :  lucasdisalvo@gmail.com \\
-     LinkedIn & : \href{https://www.linkedin.com/in/lucas-di-salvo-6578b915a}{Lucas Di Salvo} \\
-     GitHub & : \href{https://github.com/lucasDS-0}{Lucas Di Salvo}
+\begin{tabular}{l | l}
+      \faLinkedin ~ \href{https://www.linkedin.com/in/lucas-di-salvo-6578b915a}{LinkedIn} \
+     & \faGithub ~ \href{https://github.com/lucasDS-0}{GitHub} 
 \end{tabular}
 
-
-\section*{Education} 
+\section*{\faBook ~~ Education} 
 \hrule
-\
 
+\
+\newline
 \
 
 \begin{tabular}{l l}
@@ -45,13 +56,23 @@
                 & E.T. N°3 "María Sanchez de Thompson"
 \end{tabular}
 
-\section*{Experience} 
+\section*{\faCubes ~~ Experience} 
 \hrule
-\
 
 \
+\newline
+\
 
-\begin{tabular}{l l}
+\begin{tabular}{l | l}
+    2023 - ongoing (8 months) & \textbf{Teaching Assistant at faculty} \\
+                            & Preparation and teaching of lectures for undergraduate courses on: \\
+                            & Logic and Computability, Programming Paradigms. \\ 
+                            & Planning and evaluation of multiple students. \\
+                            \\
+    2021 - 2022 (7 months) & \textbf{Junior Game Developer} \\
+                            & Making of custom UIs and interactions for different game systems, \\
+                            & such as a BattlePass, PopUps, Item selectors and more. \\
+                            \\
     2020 - 2021 (11 months) & \textbf{Computer science popularizer at faculty} \\
                             & Preparation of courses for high school students about different CS topics, \\ 
                             & stand expositor in science fairs and career path talks. \\
@@ -68,7 +89,7 @@
                     & Data structures and Introduction to algorithms.
 \end{tabular}
 
-\section*{Tools and Technologies} 
+\section*{\faCogs ~~ Tools and Technologies} 
 \hrule
 \
 
@@ -76,32 +97,33 @@
     
 \begin{multicols}{3}
     \begin{tabular}{l l}
-        C++ & $\bullet~\bullet~\bullet~\bullet~\circ$ \\
+        C/C++ & $\bullet~\bullet~\bullet~\circ~\circ$ \\
         Python & $\bullet~\bullet~\bullet~\circ~\circ$ \\
         LaTeX & $\bullet~\bullet~\bullet~\circ~\circ$ \\
-        C\# & $\bullet~\bullet~\circ~\circ~\circ$ \\
+        Git & $\bullet~\bullet~\bullet~\circ~\circ$ \\
         SQL & $\bullet~\bullet~\circ~\circ~\circ$
     \end{tabular}
     
     \begin{tabular}{l l}
-        C & $\bullet~\bullet~\circ~\circ~\circ$ \\
+        C\# & $\bullet~\bullet~\circ~\circ~\circ$ \\
         VB.NET & $\bullet~\bullet~\circ~\circ~\circ$ \\
         Haskell & $\bullet~\bullet~\circ~\circ~\circ$ \\
-        Linux & $\bullet~\bullet~\circ~\circ~\circ$ \\
+        Linux/Shell & $\bullet~\bullet~\circ~\circ~\circ$ \\
         JavaScript & $\bullet~\bullet~\circ~\circ~\circ$
     \end{tabular}
     
     \begin{tabular}{l l}
         Relational DB & $\bullet~\bullet~\circ~\circ~\circ$ \\
-        HTML & $\bullet~\circ~\circ~\circ~\circ$ \\
+        HTML/CSS & $\bullet~\circ~\circ~\circ~\circ$ \\
         Prolog & $\bullet~\circ~\circ~\circ~\circ$ \\
         ASM & $\bullet~\circ~\circ~\circ~\circ$ \\
-        Markdown & $\bullet~\circ~\circ~\circ~\circ$
+        Java & $\bullet~\circ~\circ~\circ~\circ$
     \end{tabular} 
 \end{multicols}
 
+\newpage
 
-\section*{Skills} 
+\section*{\faCoffee ~~ Skills} 
 \hrule
 \
 
@@ -111,27 +133,27 @@
     \begin{itemize}
         \item Team leadership
         \item Technical documentation reading - writing
-        \item Committed
         \item Self taught
         \item Teaching capabilities
-        \item Assertive communication
-        \item Teamwork 
+        \item Teamwork
+        \item Problem Solving
     \end{itemize}
 \end{multicols}
 
-\section*{Languages}
+\section*{\faLanguage ~~ Languages}
 \hrule
-\
 
 \
+\newline
+\
 
-\begin{tabular}{l l}
-    Spanish & : native \\
-    Written English & : advanced \\
-    Spoken English & : upper-intermediate
+\begin{tabular}{l | l}
+    Spanish & Native \\
+    Written English & Advanced \\
+    Spoken English & Upper-Intermediate
 \end{tabular}
 
-\section*{Projects}
+\section*{\faFileCodeO ~~ Projects}
 \hrule
 \
 
@@ -145,30 +167,33 @@
     \end{itemize}
     \item A team projects series for \textit{Algorithms and Data Structures 3} (University course), designed to research, analyze and develop algorithms using different programming techniques to address complex problems (programmed in C++ and Python3 using Jupyter notebook).
     \begin{itemize}
-        \item An analysis on the \href{https://github.com/lucasDS-0/Subset_sum}{Subset Sum} problem. The aim of this projects was to ensure the correct procedure to develop solutions using brute force, backtracking and dynamic programming for the problem at hand, and analyze the effectiveness and efficacy of said techniques, in great detail.
+        \item An analysis on the \href{https://github.com/lucasDS-0/Subset_sum}{Subset Sum} problem. The aim of this projects was to ensure the correct procedure to develop solutions by using brute force, backtracking and dynamic programming for the problem at hand, and analyze the effectiveness and efficacy of said techniques, in great detail.
     \end{itemize}
-    \item This same \href{https://github.com/lucasDS-0/Resume}{resume}, done in \LaTeX.
+    \item This same \href{https://github.com/lucasDS-0/Resume}{resume}, made in \LaTeX.
 \end{itemize}
 
 
 
-\section*{Courses and Certifications} 
+\section*{\faLaptop ~~ Courses and Certifications} 
 \hrule
-\
 
+\
+\newline
 \
 
 \begin{tabular}{l l l}
+
     Problem Solving (Basic) & Hackerrank 
                             & \href{https://www.hackerrank.com/certificates/8d1db5b492de}{See credential} \\
     Python (Basic)  & Hackerrank 
                     & \href{https://www.hackerrank.com/certificates/46699d054d5a}{See credential} \\ 
 \end{tabular}
 
-\section*{Interests} 
+\section*{\faHeartO ~~ Interests} 
 \hrule
-\
 
+\
+\newline
 \
 
 \noindent I wish to learn more about science and technology, with its applications in society, while learning from the industry and academia alike, to nurture myself.
