@@ -1,13 +1,16 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage[paper=a4paper, left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry}
+\usepackage[paper=a4paper, left=1.5cm, right=1.5cm, bottom=1cm, top=1cm]{geometry}
 \usepackage{fontawesome}
 \usepackage{hyperref}
 \usepackage{multicol}
+\usepackage{booktabs}
 
+\usepackage{longtable}
 
 \usepackage{xcolor}
 \definecolor{darkred}{rgb}{0.55, 0.0, 0.0}
+\newcommand{\shade}[1]{\textcolor{gray}{#1}}
 
 \hypersetup{
     colorlinks = true,
@@ -23,6 +26,8 @@
 \renewcommand{\labelenumii}{\textcolor{darkred}{\arabic{enumi}.}}
 \renewcommand{\labelenumiii}{\textcolor{darkred}{\arabic{enumi}.}}
 
+\renewcommand\thefootnote{\textcolor{darkred}{\arabic{footnote}}}
+
 \begin{document}
 \pagestyle{empty}
 
@@ -37,9 +42,9 @@
 \newline
 \
 
-asd
+I'm a student and teaching assistant in the Computer Science degree at the Faculty of Exact and Natural Sciences of the University of Buenos Aires. I'm a very proactive person that is interested in learning about many topics in computer science, while also doing a deep dive on various concepts regarding programming languages. This has lead me to pursue an academic career, and share this interest of mine through teaching, a job that I like very much.
 
-\section*{\faAt ~~ Personal Data} 
+\section*{\faAt ~~ Personal Links} 
 \hrule
 
 \
@@ -59,12 +64,55 @@ asd
 \newline
 \
 
-\begin{tabular}{l l}
-    2017 - 2026 (expected)  & \textbf{Licenciatura en Ciencias de la Computación}\\
-                    & Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires \\ \\
-    2011 - 2016 & \textbf{Técnico en Computación} \\
+\footnotetext[1]{The number of hours only accounts for the in-class time.}
+\begin{longtable}{l l}
+    2017 - ongoing  & \textbf{Licenciatura en Ciencias de la Computación}\\
+                    & Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires \\
+					\\
+                    & \textit{Thesis} \\      
+					\\
+                    & \textit{Optional courses\footnotemark[1]:} \\    
+                    \\                
+                    & $\circ$ Behavioral Types and Contracts \shade{(64 hs)} \\
+                    & $\circ$ Functional Approach to EDSLs \shade{(15 hs)} \hfill (ECI2024) \\
+                    & $\circ$ The Lambda-Calculus: \\
+                    & $~~$ From Simple Types to Non-Idempotent Intersection Types \shade{(15 hs)} \hfill (ECI2024) \\
+                    & $\circ$ Introduction to APIs \shade{(24 hs)} \\
+                    & $\circ$ Rewritting, Lambda-Calculus and Types \shade{(64 hs)} \\
+                    & $\circ$ Concurrent Programming \shade{(64 hs)} \\
+                    & $\circ$ Linear Logic: Syntax, Models and Extensions \shade{(15 hs)} \hfill (ECI2023) \\
+                    & $\circ$ Hetereogeneus programming models: \\
+                    & $~~$ Portability, Performance and Programmability \shade{(15 hs)} \hfill (ECI2022) \\
+                    \\
+                    & \textit{Mandatory courses\footnotemark[1]:} \\
+                    \\
+                    & $\circ$ Algebra I \shade{(208 hs)} \\
+                    & \indent about asdasd \\
+                    & $\circ$ Calculus II \shade{(160 hs)} \\ 
+                    & $\circ$ Probability and Statistics \shade{(160 hs)} \\ 
+                    & $\circ$ Algorithms and Data Structures I \shade{(240 hs)} \\ 
+                    & $\circ$ Algorithms and Data Structures II \shade{(240 hs)} \\
+                    & $\circ$ Algorithms and Data Structures III \shade{(240 hs)} \\
+                    & $\circ$ Computer Organization I \shade{(112 hs)} \\ 
+                    & $\circ$ Computer Organization II \shade{(160 hs)} \\ 
+                    & $\circ$ Numerical Methods \shade{(240 hs)} \\
+                    & $\circ$ Logic and Computability \shade{(112 hs)} \\
+                    & $\circ$ Operating Systems \shade{(160 hs)} \\ 
+                    & $\circ$ Programming Language Paradigms \shade{(120 hs)} \\ 
+                    & $\circ$ Language Theory \shade{(120 hs)} \\ 
+                    & $\circ$ Software Engineering I \shade{(160 hs)} \\
+                    & $\circ$ Software Engineering II \shade{(160 hs)} \\
+                    & $\circ$ CBC (\emph{Common Basic Cycle}, a one year entrance program to Buenos Aires University) \\
+                    & \indent $*$ Calculus I \\
+                    & \indent $*$ Algebra \\
+                    & \indent $*$ Introduction to Scientific Thinking \\
+                    & \indent $*$ Introduction to Knowledge of Society and State\\
+                    & \indent $*$ Chemistry \\
+                    & \indent $*$ Physics \\
+                    \\
+    2011 - 2016 & \textbf{Técnico en Computación} (technical high-school in programming \& it)\\
                 & E.T. N°3 "María Sanchez de Thompson"
-\end{tabular}
+\end{longtable}
 
 \section*{\faCubes ~~ Experience} 
 \hrule
@@ -91,7 +139,7 @@ asd
                             \\
     2020 - 2021 (11 months) & \textbf{Computer science popularizer at "Universidad de Buenos Aires"} \\
                             & Preparation of courses for high school students about different \\ 
-                            & Computer Science topics, stand expositor in science fairs and career path talks. \\
+                            & Computer Science topics, stand speaker in science fairs and career path talks. \\
                             \\
     2019 (6 months) & \textbf{Software Developer at "Seincomp Informática"} \\
                     &  Analysis, development and deployment of .NET customized applications, \\ 
@@ -154,7 +202,8 @@ asd
 \begin{tabular}{l | l}
     Spanish & Native \\
     Written English & Advanced \\
-    Spoken English & Upper-Intermediate
+    Spoken English & Upper-Intermediate \\
+    Japanese & Basic comprehension
 \end{tabular}
 
 \section*{\faFileCodeO ~~ Projects}
