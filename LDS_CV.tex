@@ -9,8 +9,9 @@
 \usepackage{longtable}
 
 \usepackage{xcolor}
+\definecolor{myGray}{RGB}{105, 93, 93}
 \definecolor{darkred}{rgb}{0.55, 0.0, 0.0}
-\newcommand{\shade}[1]{\textcolor{gray}{#1}}
+\newcommand{\shade}[1]{\textcolor{myGray}{#1}}
 
 \hypersetup{
     colorlinks = true,
@@ -74,34 +75,55 @@ I'm a student and teaching assistant in the Computer Science degree at the Facul
                     & \textit{Optional courses\footnotemark[1]:} \\    
                     \\                
                     & $\circ$ Behavioral Types and Contracts \shade{(64 hs)} \\
-                    & $\circ$ Functional Approach to EDSLs \shade{(15 hs)} \hfill (ECI2024) \\
+                    & $\circ$ Functional Approach to EDSLs \shade{(15 hs)} \hfill \shade{(ECI2024)} \\
                     & $\circ$ The Lambda-Calculus: \\
-                    & $~~$ From Simple Types to Non-Idempotent Intersection Types \shade{(15 hs)} \hfill (ECI2024) \\
-                    & $\circ$ Introduction to APIs \shade{(24 hs)} \\
+                    & $~~$ From Simple Types to Non-Idempotent Intersection Types \shade{(15 hs)} \hfill \shade{(ECI2024)} \\
                     & $\circ$ Rewritting, Lambda-Calculus and Types \shade{(64 hs)} \\
                     & $\circ$ Concurrent Programming \shade{(64 hs)} \\
-                    & $\circ$ Linear Logic: Syntax, Models and Extensions \shade{(15 hs)} \hfill (ECI2023) \\
+                    & $\circ$ Linear Logic: Syntax, Models and Extensions \shade{(15 hs)} \hfill \shade{(ECI2023)} \\
                     & $\circ$ Hetereogeneus programming models: \\
-                    & $~~$ Portability, Performance and Programmability \shade{(15 hs)} \hfill (ECI2022) \\
+                    & $~~$ Portability, Performance and Programmability \shade{(15 hs)} \hfill \shade{(ECI2022)} \\
+                    & $\circ$ Introduction to APIs \shade{(24 hs)} \\
                     \\
                     & \textit{Mandatory courses\footnotemark[1]:} \\
                     \\
-                    & $\circ$ Algebra I \shade{(208 hs)} \\
-                    & \indent about asdasd \\
-                    & $\circ$ Calculus II \shade{(160 hs)} \\ 
-                    & $\circ$ Probability and Statistics \shade{(160 hs)} \\ 
-                    & $\circ$ Algorithms and Data Structures I \shade{(240 hs)} \\ 
-                    & $\circ$ Algorithms and Data Structures II \shade{(240 hs)} \\
-                    & $\circ$ Algorithms and Data Structures III \shade{(240 hs)} \\
-                    & $\circ$ Computer Organization I \shade{(112 hs)} \\ 
-                    & $\circ$ Computer Organization II \shade{(160 hs)} \\ 
-                    & $\circ$ Numerical Methods \shade{(240 hs)} \\
-                    & $\circ$ Logic and Computability \shade{(112 hs)} \\
-                    & $\circ$ Operating Systems \shade{(160 hs)} \\ 
-                    & $\circ$ Programming Language Paradigms \shade{(120 hs)} \\ 
-                    & $\circ$ Language Theory \shade{(120 hs)} \\ 
-                    & $\circ$ Software Engineering I \shade{(160 hs)} \\
                     & $\circ$ Software Engineering II \shade{(160 hs)} \\
+                    & \indent \shade{Dynamic analysis of programs (genetic and evolutionary algorithms, fuzzing, etc.),} \\
+                    & \indent \shade{static analysis of programs (dataflow analysis, interprocedural,} \\
+                    & \indent \shade{intraprocedural, etc.), software verification.} \\
+                    & $\circ$ Numerical Methods \shade{(240 hs)} \\
+                    & $\circ$ Operating Systems \shade{(160 hs)} \\ 
+                    & \indent \shade{Unix and Bash, Processes and SO API, Scheduling, synchronization and concurrency mechanisms,} \\
+                    & \indent \shade{memory management, drivers and I/O, file systems, security and virtualization.} \\
+                    & $\circ$ Software Engineering I \shade{(160 hs)} \\
+                    & \indent \shade{OOP in SmallTalk, TDD and design principles.} \\
+                    & $\circ$ Language Theory \shade{(120 hs)} \\ 
+                    & \indent \shade{Automata theory, regular expressions, grammars, parsers.} \\
+                    & $\circ$ Computer Organization II \shade{(160 hs)} \\ 
+                    & \indent \shade{Intel architecture, ASM introduction, ASM and C ABI, SIMD, microarchitecture,} \\
+                    & \indent cache, paging and segmentation, memory optimization techiniques. \\
+                    & $\circ$ Programming Language Paradigms \shade{(120 hs)} \\ 
+                    & \indent Functional programming in Haskell, Lambda-calculus, type inference, subtyping,  \\
+                    & \indent resolution, logical programming in Prolog, classification and prototyping in Javascript. \\
+                    & $\circ$ Algorithms and Data Structures III \shade{(240 hs)} \\
+                    & \indent Graph theory, backtracking, dynamic programming, greedy algorithms, \\
+                    & \indent heuristics and metaheuristics, shortest pat, MST, max-flow, \\
+                    & \indent introduction to complexity theory, SAT. Done in C/C++ for algorithm design, \\ 
+                    & \indent and Python for dataset preparation, experimenting and analysis.\\
+                    & $\circ$ Logic and Computability \shade{(112 hs)} \\
+                    & \indent Turing machines, Halting problem, propositional logic, first order logic. \\
+                    & $\circ$ Algorithms and Data Structures II \shade{(240 hs)} \\
+                    & \indent Formal specification of abstract data types, trees and complex data structures, \\
+                    & \indent search and sorting algorithms, asymptotic analysis of algorithmis. Done in C/C++. \\
+                    & $\circ$ Computer Organization I \shade{(112 hs)} \\ 
+                    & \indent Von Neumann machines, data representation, logic circuit design, CPU architecture, \\
+                    & \indent introduction to microarchitecture, memory, I/O, interruptions and buses. \\
+                    & $\circ$ Algorithms and Data Structures I \shade{(240 hs)} \\ 
+                    & \indent Formal specification of programs, weakest precondition, Hoare logic,  \\
+                    & \indent general programming concepts, testing. Done in C/C++.  \\
+                    & $\circ$ Probability and Statistics \shade{(160 hs)} \\ 
+                    & $\circ$ Calculus II \shade{(160 hs)} \\ 
+                    & $\circ$ Algebra I \shade{(208 hs)} \\
                     & $\circ$ CBC (\emph{Common Basic Cycle}, a one year entrance program to Buenos Aires University) \\
                     & \indent $*$ Calculus I \\
                     & \indent $*$ Algebra \\
@@ -121,7 +143,7 @@ I'm a student and teaching assistant in the Computer Science degree at the Facul
 \newline
 \
 
-\begin{tabular}{l | l}
+\begin{longtable}{l | l}
     2023 - ongoing  & \textbf{Teaching Assistant at "Universidad de Buenos Aires"} \\
                             & Preparation and teaching of lectures for undergraduate courses on: \\
                             & Logic and Computability, Programming Paradigms. \\ 
@@ -142,54 +164,16 @@ I'm a student and teaching assistant in the Computer Science degree at the Facul
                             & Computer Science topics, stand speaker in science fairs and career path talks. \\
                             \\
     2019 (6 months) & \textbf{Software Developer at "Seincomp Informática"} \\
-                    &  Analysis, development and deployment of .NET customized applications, \\ 
-                    & with its maintenance and support. \\
-                    & Web applications development for internal usage.\\
+                    &  Analysis, development and deployment of .NET (VB, C\#, Microsoft SQL Server) \\
+                    & customized applications, with its maintenance and support. \\
+                    & Web applications development for internal usage, with JavaScript (Boostrap), HTML, CSS.\\
                     \\
     2019 - 2021     & \textbf{Programming lessons}  \\
                     & Organization and teaching to high school students. \\
                     & The topics include but are not limited to: \\ 
-                    & Python programming, OOP, Structured programming, C\#, \\ 
+                    & Python programming, OOP, Structured programming, C\#, Java, \\ 
                     & Data structures and Introduction to algorithms.
-\end{tabular}
-
-\newpage
-
-\section*{\faCogs ~~ Tools and Technologies} 
-\hrule
-\
-
-\
-    
-\begin{multicols}{4}
-    \begin{tabular}{l}
-    	C/C++ \\
-        Python \\
-        Git \\
-        \LaTeX
-    \end{tabular}
-
-    \begin{tabular}{l}
-		JavaScript \\
-        Prolog \\
-        ASM \\
-        Bash 
-    \end{tabular}
-    
-    \begin{tabular}{l}
-        Haskell \\
-		SQL \\
-	    Smalltalk \\
-        Java
-    \end{tabular}
-    
-    \begin{tabular}{l}
-        VB.NET \\
-        RDBMs \\
-        HTML/CSS 
-    \end{tabular}
-   
-\end{multicols}
+\end{longtable}
 
 
 \section*{\faLanguage ~~ Languages}
@@ -228,22 +212,6 @@ I'm a student and teaching assistant in the Computer Science degree at the Facul
 \end{itemize}
 
 
-
-\section*{\faLaptop ~~ Courses and Certifications} 
-\hrule
-
-\
-\newline
-\
-
-\begin{tabular}{l l l}
-
-    Problem Solving (Basic) & Hackerrank 
-                            & (\href{https://www.hackerrank.com/certificates/8d1db5b492de}{See credential}) \\
-    Python (Basic)  & Hackerrank 
-                    & (\href{https://www.hackerrank.com/certificates/46699d054d5a}{See credential}) \\ 
-\end{tabular}
-
 \section*{\faCoffee ~~ Soft Skills} 
 \hrule
 \
@@ -276,7 +244,7 @@ I'm a student and teaching assistant in the Computer Science degree at the Facul
 \newline
 \
 
-\begin{tabular}{l | l}
+\begin{longtable}{l | l}
 
 2024 - September & \textbf{Science Fair - Booth Speaker} \\
 			     & Hosted a booth about algorithmic concepts like binary search, \\
@@ -301,6 +269,6 @@ I'm a student and teaching assistant in the Computer Science degree at the Facul
 	        \\
 
 
-\end{tabular}
+\end{longtable}
 
 \end{document}
