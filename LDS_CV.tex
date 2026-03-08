@@ -1,10 +1,16 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage[paper=a4paper, left=1.5cm, right=1.5cm, bottom=1cm, top=1cm]{geometry}
+
 \usepackage{fontawesome}
 \usepackage{hyperref}
 \usepackage{multicol}
 \usepackage{booktabs}
+
+
+\usepackage{concmath}
+\usepackage[OT1]{fontenc}
+
+\usepackage[paper=a4paper, left=1.5cm, right=1.5cm, bottom=1cm, top=1cm]{geometry}
 
 \usepackage{longtable}
 
@@ -65,12 +71,14 @@ I'm a student and teaching assistant in the Computer Science degree at the Facul
 \newline
 \
 
-\footnotetext[1]{The number of hours only accounts for the in-class time.}
+
+\footnotetext[1]{The hour count only accounts for the in-class time.}
 \begin{longtable}{l l}
-    2017 - ongoing  & \textbf{Licenciatura en Ciencias de la Computación}\\
-                    & Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires \\
+    2017 - ongoing  & \textbf{Msc. in Computer science}\\
+                  & Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires \\
 					\\
-                    & \textit{Thesis} \\      
+                    & \textit{Thesis} \shade{(In progress since January 2026)}: Extending a reversible operational semantics for \\
+                    & imperative programming languages with concurrency \\  
 					\\
                     & \textit{Optional courses\footnotemark[1]:} \\    
                     \\                
@@ -93,50 +101,82 @@ I'm a student and teaching assistant in the Computer Science degree at the Facul
                     & \indent \shade{intraprocedural, etc.), software verification.} \\
                     & $\circ$ Numerical Methods \shade{(240 hs)} \\
                     & $\circ$ Operating Systems \shade{(160 hs)} \\ 
-                    & \indent \shade{Unix and Bash, Processes and SO API, Scheduling, synchronization and concurrency mechanisms,} \\
-                    & \indent \shade{memory management, drivers and I/O, file systems, security and virtualization.} \\
+                    & \indent \shade{Unix and Bash, Processes and SO API, Scheduling, synchronization and concurrency} \\ 
+                    & \indent \shade{mechanisms, memory management, drivers and I/O, file systems, security and virtualization.} \\
                     & $\circ$ Software Engineering I \shade{(160 hs)} \\
                     & \indent \shade{OOP in SmallTalk, TDD and design principles.} \\
                     & $\circ$ Language Theory \shade{(120 hs)} \\ 
                     & \indent \shade{Automata theory, regular expressions, grammars, parsers.} \\
                     & $\circ$ Computer Organization II \shade{(160 hs)} \\ 
                     & \indent \shade{Intel architecture, ASM introduction, ASM and C ABI, SIMD, microarchitecture,} \\
-                    & \indent cache, paging and segmentation, memory optimization techiniques. \\
+                    & \indent \shade{cache, paging and segmentation, memory optimization techiniques.} \\
                     & $\circ$ Programming Language Paradigms \shade{(120 hs)} \\ 
-                    & \indent Functional programming in Haskell, Lambda-calculus, type inference, subtyping,  \\
-                    & \indent resolution, logical programming in Prolog, classification and prototyping in Javascript. \\
+                    & \indent \shade{Functional programming in Haskell, Lambda-calculus, type inference, subtyping,}  \\
+                    & \indent \shade{resolution, logical programming in Prolog, classification and prototyping in Javascript.} \\
                     & $\circ$ Algorithms and Data Structures III \shade{(240 hs)} \\
-                    & \indent Graph theory, backtracking, dynamic programming, greedy algorithms, \\
-                    & \indent heuristics and metaheuristics, shortest pat, MST, max-flow, \\
-                    & \indent introduction to complexity theory, SAT. Done in C/C++ for algorithm design, \\ 
-                    & \indent and Python for dataset preparation, experimenting and analysis.\\
+                    & \indent \shade{Graph theory, backtracking, dynamic programming, greedy algorithms,} \\
+                    & \indent \shade{heuristics and metaheuristics, shortest pat, MST, max-flow,} \\
+                    & \indent \shade{introduction to complexity theory, SAT. Done in C/C++ for algorithm design,} \\ 
+                    & \indent \shade{and Python for dataset preparation, experimenting and analysis.} \\
                     & $\circ$ Logic and Computability \shade{(112 hs)} \\
-                    & \indent Turing machines, Halting problem, propositional logic, first order logic. \\
+                    & \indent \shade{Turing machines, Halting problem, propositional logic, first order logic.} \\
                     & $\circ$ Algorithms and Data Structures II \shade{(240 hs)} \\
-                    & \indent Formal specification of abstract data types, trees and complex data structures, \\
-                    & \indent search and sorting algorithms, asymptotic analysis of algorithmis. Done in C/C++. \\
+                    & \indent \shade{Formal specification of abstract data types, trees and complex data structures,} \\
+                    & \indent \shade{search and sorting algorithms, asymptotic analysis of algorithmis. Done in C/C++.} \\
                     & $\circ$ Computer Organization I \shade{(112 hs)} \\ 
-                    & \indent Von Neumann machines, data representation, logic circuit design, CPU architecture, \\
-                    & \indent introduction to microarchitecture, memory, I/O, interruptions and buses. \\
+                    & \indent \shade{Von Neumann architecture, data representation, logic circuit design, CPU architecture,} \\
+                    & \indent \shade{introduction to microarchitecture, memory, I/O, interruptions and buses.} \\
                     & $\circ$ Algorithms and Data Structures I \shade{(240 hs)} \\ 
-                    & \indent Formal specification of programs, weakest precondition, Hoare logic,  \\
-                    & \indent general programming concepts, testing. Done in C/C++.  \\
+                    & \indent \shade{Formal specification of programs, weakest precondition, Hoare logic,}  \\
+                    & \indent \shade{general programming concepts, testing. Done in C/C++.}  \\
                     & $\circ$ Probability and Statistics \shade{(160 hs)} \\ 
                     & $\circ$ Calculus II \shade{(160 hs)} \\ 
                     & $\circ$ Algebra I \shade{(208 hs)} \\
-                    & $\circ$ CBC (\emph{Common Basic Cycle}, a one year entrance program to Buenos Aires University) \\
-                    & \indent $*$ Calculus I \\
-                    & \indent $*$ Algebra \\
-                    & \indent $*$ Introduction to Scientific Thinking \\
-                    & \indent $*$ Introduction to Knowledge of Society and State\\
-                    & \indent $*$ Chemistry \\
-                    & \indent $*$ Physics \\
+                    & $\circ$ CBC \shade{(\emph{Common Basic Cycle}, a one year entrance program to Buenos Aires University)} \\
+                    & \indent $*$ Calculus I, Algebra, Introduction to Scientific Thinking, Introduction to Knowledge of \\ 
+                    & \indent $~~$ Society and State, Chemistry, Physics. \\
                     \\
-    2011 - 2016 & \textbf{Técnico en Computación} (technical high-school in programming \& it)\\
+    2011 - 2016 & \textbf{Técnico en Computación} (Technical high-school in programming \& it)\\
                 & E.T. N°3 "María Sanchez de Thompson"
 \end{longtable}
 
-\section*{\faCubes ~~ Experience} 
+\section*{\faCubes ~~ Academic Experience} 
+\hrule
+
+\
+\newline
+\
+
+\noindent All positions\footnotemark[2] were obtained by an annually public selection and ranking process.
+
+\footnotetext[2]{at Buenos Aires University.}
+\footnotetext[3]{done indenpendently.}
+\begin{longtable}{l | l}
+    2024 - ongoing  & \textbf{Teaching Assistant of "Programming Language Paradigms"}\footnotemark[2] \\
+                    & Preparation and lecturing of practical classes for hundreds of students. Exams and projects \\ 
+                    & writting, assessment and evaluation, among others. \\
+                    \\
+    August 2023 -  & \textbf{Teaching Assistant of "Logic and Computability"}\footnotemark[2] \\
+    February 2024  & Preparation and lecturing of practical classes. Exams assessment and evaluation, \\
+                   & among others. \\
+                    \\
+	2025 - 2026 (1 year) & \textbf{Teacher of \LaTeX workshop}\footnotemark[2] \\
+							& Creation and lecturing of a monthly 3-hour \LaTeX workshop. \\
+							& The aim of the workshop is to give tools to new students  to tackle written assignments, \\ 
+							& reports and such, as well as being able to take stylized and detailed notes. \\
+                           \\
+2020 - 2021 (1 year) & \textbf{Computer science popularizer}\footnotemark[2] \\
+                     & Preparation of courses for high school students about different Computer Science topics, \\
+                     & stands in science fairs and vocational orientation talks. \\		
+                     \\	
+    2019 - 2021     & \textbf{Programming lessons}\footnotemark[3]  \\
+                    & Organization and teaching to high school students. The topics include but are not \\
+                    & limited to: Python programming, OOP, structured programming, C\#, Java, \\ 
+                    & data structures and an introduction to algorithms.
+\end{longtable}
+
+
+\section*{\faCogs ~~ Industry Experience} 
 \hrule
 
 \
@@ -144,37 +184,39 @@ I'm a student and teaching assistant in the Computer Science degree at the Facul
 \
 
 \begin{longtable}{l | l}
-    2023 - ongoing  & \textbf{Teaching Assistant at "Universidad de Buenos Aires"} \\
-                            & Preparation and teaching of lectures for undergraduate courses on: \\
-                            & Logic and Computability, Programming Paradigms. \\ 
-                            & Planning and evaluation of multiple students. \\
-                            \\
-	2025 - 2026 (1 year) & \textbf{Teacher of \LaTeX workshop at "Universidad de Buenos Aires"} \\
-							& Creation and lecturing of a monthly 3-hour \LaTeX workshop. \\
-							& The aim of the workshop is to give tools to new students \\
-							& to tackle written assignments, reports and such, \\
-							& as well as being able to take stylized and detailed notes. \\
-							\\
     2021 - 2022 (7 months) & \textbf{Game Developer at "Globant"} \\
-                            & Making of custom UIs and interactions for different game systems, \\
-                            & such as a BattlePass, PopUps, Item selectors and more. \\
-                            \\
-    2020 - 2021 (11 months) & \textbf{Computer science popularizer at "Universidad de Buenos Aires"} \\
-                            & Preparation of courses for high school students about different \\ 
-                            & Computer Science topics, stand speaker in science fairs and career path talks. \\
-                            \\
+                           & Making of custom UIs and interactions for different game systems, \\
+                           & such as a BattlePass, PopUps, Item selectors and more. \\
+                           \\
     2019 (6 months) & \textbf{Software Developer at "Seincomp Informática"} \\
                     &  Analysis, development and deployment of .NET (VB, C\#, Microsoft SQL Server) \\
-                    & customized applications, with its maintenance and support. \\
-                    & Web applications development for internal usage, with JavaScript (Boostrap), HTML, CSS.\\
-                    \\
-    2019 - 2021     & \textbf{Programming lessons}  \\
-                    & Organization and teaching to high school students. \\
-                    & The topics include but are not limited to: \\ 
-                    & Python programming, OOP, Structured programming, C\#, Java, \\ 
-                    & Data structures and Introduction to algorithms.
+                    & customized applications, with its maintenance and support. Web applications \\
+                    & development for internal usage, with JavaScript (Boostrap), HTML, CSS.\\
 \end{longtable}
 
+\section*{\faUsers ~~ Science Popularization (Volunteering)}
+\hrule
+
+\
+\newline
+\
+
+\begin{longtable}{l | l}
+
+September 2024 & \textbf{Science Fair - Booth Speaker} \\
+September 2019 & Hosted a booth about algorithmic concepts like binary search, at the annual Computer \\
+			    & science Week in my university. Made interesting through a pick and guess game, \\
+			    & with high school students being the target audience. \\
+			    \\   
+November 2020 & \textbf{Science Fair - Workshop Instructor} \\
+		      & Hosted a workshop on Arduino and robotics for high school students, at the annual \\ 
+		      & Computer Science Week in my university. This was made during Covid, so it was offered \\
+		      & through Zoom and Tinkercad.\\
+			  \\
+June 2018 & \textbf{Science Fair - Guide} \\
+	      & Guided high school classes through their schedule (registration, talks and venues) at the \\ 
+	      & annual Computer Science Week in my university. \\
+\end{longtable}
 
 \section*{\faLanguage ~~ Languages}
 \hrule
@@ -185,9 +227,8 @@ I'm a student and teaching assistant in the Computer Science degree at the Facul
 
 \begin{tabular}{l | l}
     Spanish & Native \\
-    Written English & Advanced \\
-    Spoken English & Upper-Intermediate \\
-    Japanese & Basic comprehension
+    English & Advanced \shade{(several years of formal education, used both for education and professionaly)}\\
+    Japanese & Basic comprehension \shade{(self taught)}
 \end{tabular}
 
 \section*{\faFileCodeO ~~ Projects}
@@ -195,80 +236,18 @@ I'm a student and teaching assistant in the Computer Science degree at the Facul
 \
 
 \begin{itemize}
-    \item A project series for \textit{Algorithms and Data Structures 2} (University course), designed to develop implementations for some of the most common data structures and its functionalities (programmed in C++).
+    \item A project series for \textit{Algorithms and Data Structures 2} (mandatory university course), designed to develop implementations for some of the most common data structures and its functionalities (programmed in C++).
     \begin{itemize}
-        \item A \href{https://github.com/lucasDS-0/Doubly_Linked_List}{Doubly Linked List}.
-        \item A \href{https://github.com/lucasDS-0/BST_on_a_set}{Binary Search Tree}, implemented on a Set.
-        \item A \href{https://github.com/lucasDS-0/Map_on_a_trie}{Map}, implemented on a Trie.
-        \item A \href{https://github.com/lucasDS-0/Priority_queue_on_a_heap}{Priority Queue}, implemented on a Heap.
+        \item A \href{https://github.com/lucasDS-0/Doubly_Linked_List}{Doubly Linked List}, a \href{https://github.com/lucasDS-0/BST_on_a_set}{Binary Search Tree} implemented on a \emph{set}, a \href{https://github.com/lucasDS-0/Map_on_a_trie}{Map} implemented on a \emph{trie}, and a \href{https://github.com/lucasDS-0/Priority_queue_on_a_heap}{Priority Queue} implemented on a \emph{heap}.
     \end{itemize}
-    \item A small \href{https://github.com/lucasDS-0/hFetch}{tool} to fetch system information written in Haskell using System.IO to practice monads (both in do-notation and the vanilla monadic notation).
-    \item A project series for \textit{Algorithms and Data Structures 3} (University course), designed to research, analyze and develop algorithms using different programming techniques to address complex problems (programmed in C++ and Python3 using Jupyter notebook).
+    \item A small \href{https://github.com/lucasDS-0/hFetch}{tool} to fetch system information written in Haskell using System.IO to learn about monads (both in do-notation and \emph{vanilla} monadic notation).
+    \item A project series for \textit{Algorithms and Data Structures 3} (mandatory university course), designed to research, analyze and develop algorithms using different programming techniques to address complex problems (programmed the core algorithms in C++, and Python3 using Jupyter notebook for the data preparation and analysis).
     \begin{itemize}
         \item An analysis on the \href{https://github.com/lucasDS-0/Subset_sum}{Subset Sum} problem. The aim of this project was to ensure the correct procedure to develop solutions by using brute force, backtracking and dynamic programming for the problem at hand, and analyze the effectiveness and efficacy of said techniques, in great detail.
         \item A project about understanding and developing heuristics over the \href{https://github.com/lucasDS-0/MIC_Polytope}{Maximum Impact Coloring Polytope} problem.
     \end{itemize}
-    \item This same \href{https://github.com/lucasDS-0/Resume}{resume}, made in \LaTeX.
+    \item My \href{https://github.com/lucasDS-0/Resume}{resume} (this document), made in \LaTeX.
 \end{itemize}
 
-
-\section*{\faCoffee ~~ Soft Skills} 
-\hrule
-\
-
-\
-
-\begin{multicols}{2}
-    \begin{itemize}
-        \item Technical documentation reading - writing
-        \item Self taught
-        \item Teaching capabilities
-        \item Problem Solving
-    \end{itemize}
-\end{multicols}
-
-\section*{\faHeartO ~~ Interests} 
-\hrule
-
-\
-\newline
-\
-
-\noindent I wish to learn more about science and technology with their applications in society, while learning from the industry and academia alike, to nurture myself.
-
-
-\section*{\faUsers ~~ Volunteering} 
-\hrule
-
-\
-\newline
-\
-
-\begin{longtable}{l | l}
-
-2024 - September & \textbf{Science Fair - Booth Speaker} \\
-			     & Hosted a booth about algorithmic concepts like binary search, \\
-			     & at the annual Computer Science Week in my university. \\
-			     & Made interesting through a pick and guess game, with high school \\
-			     & students being the target audience. \\
-			    \\
-2020 - November & \textbf{Science Fair - Workshop Instructor} \\
-		        & Hosted a workshop on Arduino and robotics for high school students, \\
-		        & at the annual Computer Science Week in my university. \\
-		        & This was made during Covid, so it was offered through Zoom and Tinkercad.\\
-				\\
-2019 - September & \textbf{Science Fair - Booth Speaker} \\
-			     & Hosted a booth about algorithmic concepts like binary search, \\
-			     & at the annual Computer Science Week in my university. \\ 
-			     & Made interesting through a pick and guess game, with high school \\
-			     & students being the target audience. \\
-			    \\
-2018 - June & \textbf{Science Fair - Guide} \\
-	        & Guided high school classes through their schedule at the annual \\
-	        & Computer Science Week in my university. \\
-	        \\
-
-
-\end{longtable}
 
 \end{document}
